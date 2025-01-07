@@ -11,14 +11,14 @@ const Home = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - 50, // Adjust the offset as needed
+        top: section.offsetTop - 50, 
         behavior: "smooth",
       });
     }
   };
 
   return (
-    <div className="main-container">
+    <div className="main-container bg-green-700" >
       {/* Header */}
       <div className="w-full h-[90px]  top-3 left-0 z-10 px-12 max-[968px]:bg-pinky ">
         <div className="flex justify-between items-center h-full ">
@@ -30,43 +30,43 @@ const Home = () => {
           {/* Navigation Menu */}
           <ul
             className={`${
-              click ? " active flex flex-col justify-center items-center gap-5 font-medium text-white absolute top-[90px] right-0 w-full bg-pinky  z-20" : "hidden md:flex md:justify-center text-white"
+              click ? " active flex flex-col justify-center items-center gap-5 font-medium text-white absolute top-[90px] right-0 w-full bg-pinky animate-topToDown  z-20" : "hidden md:flex md:justify-center text-white"
             }`}
           >
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}>
                 Home
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick('about'); }}>
                 About
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#services" onClick={(e) => { e.preventDefault(); handleLinkClick('services') }}>
                 Services
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#rooms" onClick={(e) => { e.preventDefault(); handleLinkClick('rooms') }}>
                 Rooms
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#gallery" onClick={(e) => { e.preventDefault(); handleLinkClick('gallery') }}>
                 Gallery
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick("home"); }}>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); handleLinkClick('contact') }}>
                 Contact
               </a>
             </li>
           </ul>
 
           {/* Book Now Button */}
-          <button className="hidden md:block bg-pinky px-10 py-3 font-medium text-white rounded">
+          <button className="hidden md:block bg-pinky px-10 py-3 font-medium text-white rounded hover:bg-buttonPinky transition-colors duration-300">
             Book Now
           </button>
 
@@ -77,13 +77,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-container flex flex-col gap-1 justify-center items-center h-[100vh]">
+      <div className="text-container flex flex-col gap-1 justify-center items-center h-[100vh]" id="home">
         <span className="text-xl mb-4 text-gray-300">Simple - Unique - Friendly</span>
         <p className="text-[4rem] text-white font-[500] leading-none w-2/3 text-center" >Make Yourself At Home In Our <span className="font-[500] text-pinky">Guest House.</span></p>
       </div>
 
       <div className="bg-white shadow-lg relative top-12 rounded-xl py-8 mx-14 flex justify-center items-center">
-        <button className="px-7 py-3 bg-pinky font-medium rounded-lg text-white">Book Now</button>
+        <button className="px-7 py-3 bg-pinky font-medium rounded-lg text-white  hover:bg-buttonPinky transition-colors duration-300">Book Now</button>
       </div>
     </div>
   );

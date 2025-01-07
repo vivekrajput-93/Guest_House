@@ -21,6 +21,32 @@
   background-size: 100%;
 }
 
+
+
 .active {
   opacity: 0.9;
+}
+
+@media screen and (max-width:968px) {
+  .main-container {
+    background-size: cover; 
+    height: 120%; 
+  }
+}
+
+
+.link-container > div {
+  @apply  flex-1 p-6 flex flex-col gap-6 
+}
+
+.link-container > div > .link-list {
+  @apply flex flex-col gap-4
+}
+
+.link-container > div > h2 {
+  @apply mb-3 text-xl font-[500]
+}
+
+.link-container > div > .link-list > li {
+  @apply text-neutral-500 cursor-pointer hover:text-white transition-colors duration-300
 }

@@ -9,6 +9,9 @@ export default {
       colors: {
         pinky: '#e82574',
         buttonPinky : "#bc1c5c",
+        babyPink : "#f472b6",
+        paintColor : "#c084fc",
+        shieldColor : "#60a5fa"
       },
       keyframes: {
         topToDown: {

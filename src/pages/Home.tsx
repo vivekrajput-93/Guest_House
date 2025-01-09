@@ -44,13 +44,13 @@ const Home = () => {
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#services" onClick={(e) => { e.preventDefault(); handleLinkClick('services') }}>
-                Services
+            <a href="#services" onClick={(e) => { e.preventDefault(); handleLinkClick('rooms') }}>
+                Rooms
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
-            <a href="#rooms" onClick={(e) => { e.preventDefault(); handleLinkClick('rooms') }}>
-                Rooms
+            <a href="#rooms" onClick={(e) => { e.preventDefault(); handleLinkClick('services') }}>
+                Services
               </a>
             </li>
             <li className="px-4 py-2 font-semibold">
@@ -79,7 +79,7 @@ const Home = () => {
 
       <div className="text-container flex flex-col gap-1 justify-center items-center h-[100vh]" id="home">
         <span className="text-xl mb-4 text-gray-300">Simple - Unique - Friendly</span>
-        <p className="text-[4rem] text-white font-[500] leading-none w-2/3 text-center" >Make Yourself At Home In Our <span className="font-[500] text-pinky">Guest House.</span></p>
+        <p className="text-white text-[4rem]  font-[500] leading-none w-2/3 text-center" >Make Yourself At Home In Our <span className="font-[500] text-pinky">Guest House.</span></p>
       </div>
 
       <div className="bg-white shadow-lg relative top-12 rounded-xl py-8 mx-14 flex justify-center items-center">

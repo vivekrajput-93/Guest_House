@@ -2,7 +2,7 @@ import out from "../assets/out.jpg";
 
 const About = () => {
   return (
-    <div className="about-container mt-16 flex py-8 gap-8 max-[768px]:flex-col ">
+    <div className="about-container mt-16 flex py-8 gap-8 max-[768px]:flex-col " id="about">
       <div className="image-container flex-1 rounded-lg flex justify-center max-[536px]:mx-4">
         <img src={out} alt="about-image" className="rounded-lg max-[536px]:h-[600px] " width={450} height={800}  />
       </div>
@@ -11,7 +11,7 @@ const About = () => {
           About us <div className="w-[60px] h-[0.10rem] bg-pinky"></div>
         </h4>
         <h2 className=" pr-7 text-[2.5rem] font-semibold leading-tight">The Best Holidays Start Here!</h2>
-        <p className="pr-7 text-neutral-500">
+        <p className="pr-7 text-neutral-500 font-medium">
           Embark on a tranquil journey at our Kingsukh Guest House, enveloped by
           the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill,
           Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the

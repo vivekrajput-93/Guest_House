@@ -23,6 +23,7 @@
 
 
 
+
 .active {
   opacity: 0.9;
 }
@@ -49,4 +50,55 @@
 
 .link-container > div > .link-list > li {
   @apply text-neutral-500 cursor-pointer hover:text-white transition-colors duration-300
+}
+
+
+/* Room Section */
+
+.card-section {
+  @apply rounded-lg shadow-lg
+}
+
+.text-container {
+  @apply mt-3 p-4 flex flex-col gap-3
+}
+
+.text-container h2 {
+  @apply text-xl font-medium
+}
+
+/* .text-container p {
+  @apply text-neutral-500 font-medium
+} */
+
+.image-section {
+  @apply relative
+}
+
+.icon-section {
+  @apply flex bottom-3 right-3 absolute gap-3
+}
+
+.image-section > img {
+  @apply rounded-t-lg
+}
+
+.book-button {
+  @apply w-fit text-white font-medium px-6 py-3 bg-pinky rounded-lg hover:bg-buttonPinky transition-colors duration-300
+}
+
+.icon-section span {
+  @apply bg-white w-12 h-12 rounded-full flex justify-center items-center
+}
+
+.icon-section span:nth-child(1) {
+  @apply text-2xl text-babyPink cursor-pointer
+}
+
+.icon-section span:nth-child(2) {
+  @apply text-2xl text-paintColor cursor-pointer
+}
+
+.icon-section span:nth-child(3) {
+  @apply text-2xl text-shieldColor cursor-pointer
 }

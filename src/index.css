@@ -102,3 +102,41 @@
 .icon-section span:nth-child(3) {
   @apply text-2xl text-shieldColor cursor-pointer
 }
+
+
+/* Service Section */
+
+.content-container {
+  background: url("./assets/palash.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content-section {
+  @apply px-16 py-10 max-[768px]:px-8
+}
+
+
+.icon-container {
+  @apply flex flex-col gap-5 mt-6  max-[768px]:gap-2
+}
+
+ .icon-container > div {
+  @apply flex gap-5 items-center
+ }
+
+ .icon-container > div > span {
+  @apply  w-14 h-14 rounded-full flex justify-center items-center
+ }
+
+
+ .icon-container > div > span > i {
+  @apply text-2xl 
+ }

@@ -3,6 +3,7 @@ import About from "./pages/About"
 import Home from "./pages/Home"
 import "remixicon/fonts/remixicon.css";
 import Rooms from "./pages/Rooms";
+import Services from "./pages/Services";
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
      <Home /> 
      <About />
      <Rooms />
+     <Services />
      <Footer />
     </div>
   )

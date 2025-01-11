@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import "remixicon/fonts/remixicon.css";
 import Rooms from "./pages/Rooms";
 import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 
 
@@ -14,6 +16,8 @@ const App = () => {
      <About />
      <Rooms />
      <Services />
+     <Gallery />
+     {/* <Contact /> */}
      <Footer />
     </div>
   )

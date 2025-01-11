@@ -140,3 +140,105 @@
  .icon-container > div > span > i {
   @apply text-2xl 
  }
+
+
+
+/* Gallery Section */
+
+.pic-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, 33.33vh); /* 3 rows, each taking 33.33% of viewport height */
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  
+}
+
+.pic-container .box {
+  position: relative;
+  background: #ccc;
+}
+
+.pic-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.pic-container .box.box-1 {
+  grid-row: span 2; 
+  grid-column: span 1; 
+}
+
+.pic-container .box.box-2 {
+  grid-row: span 1; 
+  grid-column: span 2;
+}
+
+.pic-container .box.box-6 {
+  grid-row: span 1; 
+  grid-column: span 2; 
+}
+
+.pic-container .box.box-8 {
+  grid-row: span 1; 
+  grid-column: span 1; 
+}
+
+.pic-container .box.box-9 {
+  grid-row: span 1; 
+  grid-column: span 2; 
+}
+
+.pic-container .box.box-7 {
+  grid-row: span 1; 
+  grid-column: span 1; 
+}
+
+.gallery-heading {
+  margin: auto;
+  padding-left: 45%;
+}
+
+@media (max-width: 991px) {
+  .pic-container {
+    grid-template-rows: repeat(5, 250px); 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .pic-container .box img {
+    max-width: 100%;
+  }
+
+  .pic-container .box.box-10 {
+    bottom:250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container11 {
+      display: grid;
+      grid-template-rows: repeat(7, 200px); 
+      grid-template-columns: repeat(2, 1fr); 
+  }
+
+}
+
+
+/* Contact Section */
+
+.input-container {
+  @apply flex mb-3 mt-2
+}
+
+
+
+.data-container > ul > .info-link {
+  @apply flex gap-3
+}
+
+.info-container   img {
+  filter: invert(1);
+}
+

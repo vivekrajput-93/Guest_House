@@ -5,7 +5,7 @@ import Youtube from "../assets/socials/youtube.png"
 
 const Footer = () => {
   return (
-    <div className="footer-container mt-4 bg-black text-white">
+    <div className="footer-container  bg-black text-white">
       <div className="link-container flex gap-1  mt-14 max-[768px]:flex-col">
         <div>
             <h2 className="w-1/3"><a href="#home">Kingsukh Guest House</a></h2>

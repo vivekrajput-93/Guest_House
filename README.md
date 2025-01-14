@@ -43,3 +43,6 @@
 <li>npm run dev</li>
 </ul>
 
+<h4>📸 Screenshots</h4>
+
+<img src"src/assets/readme-images/screen-shot1.png" alt="screen-shot>

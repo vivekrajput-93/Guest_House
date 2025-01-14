@@ -35,10 +35,11 @@
 <span>git clone https://github.com/vivekrajput-93/guest-house.git</span>
 
 <h3>3. Navigate to the project directory:</h3>
-
-<p>cd guest-house</p>
-<p>npm install</p>
-<p>npm run dev</p>
-<p>npm run build</p>
-<p>npm run dev</p>
+<ul>
+<li>cd guest-house</li>
+<li>npm install</li>
+<li>npm run dev</li>
+<li>npm run build</li>
+<li>npm run dev</li>
+</ul>ul>
 

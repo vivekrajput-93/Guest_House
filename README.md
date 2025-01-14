@@ -41,5 +41,5 @@
 <li>npm run dev</li>
 <li>npm run build</li>
 <li>npm run dev</li>
-</ul>ul>
+</ul>
 

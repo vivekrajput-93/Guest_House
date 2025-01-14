@@ -198,7 +198,9 @@
 
 .gallery-heading {
   margin: auto;
-  padding-left: 45%;
+  /* padding-left: 45%; */
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -242,3 +244,25 @@
   filter: invert(1);
 }
 
+
+
+/* Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 14px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e82574; 
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bc1c5c; 
+  cursor: pointer;
+}

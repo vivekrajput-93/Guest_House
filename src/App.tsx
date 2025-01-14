@@ -6,12 +6,14 @@ import Rooms from "./pages/Rooms";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import GotoTop from "./components/Gotop";
 
 
 
 const App = () => {
   return (
     <div className="flex flex-col gap-12">
+      <GotoTop />
      <Home /> 
      <About />
      <Rooms />

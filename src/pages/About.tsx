@@ -1,17 +1,41 @@
+import { motion } from "framer-motion";
 import out from "../assets/out.jpg";
 
 const About = () => {
+  const imageAnimation = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <div className="about-container mt-16 flex py-8 gap-8 max-[768px]:flex-col " id="about">
-      <div className="image-container flex-1 rounded-lg flex justify-center max-[536px]:mx-4">
-        <img src={out} alt="about-image" className="rounded-lg max-[536px]:h-[600px] " width={450} height={800}  />
-      </div>
-      <div className="text-container mt-6 w-fit flex-1 flex flex-col justify-center px-5 gap-6 ">
-        <h4 className="flex gap-3 items-center font-medium tracking-widest uppercase">
+    <div
+      className="about-container mt-16 flex py-8 gap-8 max-[768px]:flex-col"
+      id="about"
+    >
+      <motion.div
+        className="image-container flex-1 rounded-lg flex justify-center max-[536px]:mx-4"
+        initial="hidden"
+        animate="visible"
+        variants={imageAnimation}
+        transition={{ duration: 1 }}
+      >
+        <img
+          src={out}
+          alt="about-image"
+          className="rounded-lg max-[536px]:h-[600px]"
+          width={450}
+          height={800}
+        />
+      </motion.div>
+
+      <div className="text-container mt-6 w-fit flex-1 flex flex-col justify-center px-5 gap-6">
+        <h4 className="flex gap-3 items-center font-medium tracking-widest uppercase animate-fadeUpSubheading">
           About us <div className="w-[60px] h-[0.10rem] bg-pinky"></div>
         </h4>
-        <h2 className=" pr-7 text-[2.5rem] font-semibold leading-tight">The Best Holidays Start Here!</h2>
-        <p className="pr-7 text-neutral-500 font-medium">
+        <h2 className="pr-7 text-[2.5rem] font-semibold leading-tight animate-fadeUpSubheading">
+          The Best Holidays Start Here!
+        </h2>
+        <p className="pr-7 text-neutral-500 font-medium animate-fadeUpHeading">
           Embark on a tranquil journey at our Kingsukh Guest House, enveloped by
           the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill,
           Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the
@@ -21,10 +45,18 @@ const About = () => {
           heartfelt hospitality. Explore the hidden gems of Purulia, creating
           memories that linger long after your stay.
         </p>
-        <a className="text-blue-700 font-bold" href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA">Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</a>
-        <a className="text-blue-700 font-bold" href="tel:+91 9007062180">Contact us: +91 9007062180</a>
-        <button className="w-fit text-white font-medium px-8 py-3 bg-pinky rounded-lg hover:bg-buttonPinky transition-colors duration-300">Book Now</button>
-
+        <a
+          className="text-blue-700 font-bold"
+          href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA"
+        >
+          Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
+        </a>
+        <a className="text-blue-700 font-bold" href="tel:+91 9007062180">
+          Contact us: +91 9007062180
+        </a>
+        <button className="w-fit text-white font-medium px-8 py-3 bg-pinky rounded-lg hover:bg-buttonPinky transition-colors duration-300">
+          Book Now
+        </button>
       </div>
     </div>
   );

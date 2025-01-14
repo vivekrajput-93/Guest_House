@@ -77,9 +77,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-container flex flex-col gap-1 justify-center items-center h-[100vh]" id="home">
-        <span className="text-xl mb-4 text-gray-300">Simple - Unique - Friendly</span>
-        <p className="text-white text-[4rem]  font-[500] leading-none w-2/3 text-center" >Make Yourself At Home In Our <span className="font-[500] text-pinky">Guest House.</span></p>
+      <div className="text-container flex flex-col gap-1 justify-center items-center h-[100vh] " id="home">
+        <span className="text-xl mb-4 text-gray-300 animate-fadeUpSubheading">Simple - Unique - Friendly</span>
+        <p className="text-white text-[4rem]  font-[500] leading-none w-2/3 text-center animate-fadeUpHeading" >Make Yourself At Home In Our <span className="font-[500] text-pinky">Guest House.</span></p>
       </div>
 
       <div className="bg-white shadow-lg relative top-12 rounded-xl py-8 mx-14 flex justify-center items-center">

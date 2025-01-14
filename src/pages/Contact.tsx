@@ -10,19 +10,19 @@ const Contact = () => {
   return (
     <>
       <div
-        className="contact-container h-[90vh] max-[768px]:mt-[350px] max-[991px]:mt-[700px] flex max-[768px]:flex-col-reverse max-[768px]:mx-5"
+        className="contact-container h-[90vh] max-[768px]:mt-[550px] max-[991px]:mt-[700px] flex max-[768px]:flex-col-reverse max-[768px]:mx-5"
         id="contact"
       >
         <div
           className="info-container relative top-4 left-20 w-[450px] h-[85vh] p-10 rounded-xl ml-12 bg-pinky flex flex-col justify-between 
-          max-[768px]:w-auto max-[768px]:left-0 max-[768px]:ml-0 max-[768px]:top-0 max-[768px]:rounded-none  max-[768px]:flex-row max-[768px]:items-center max-[768px]:gap-3 "
+          max-[768px]:w-auto max-[768px]:left-0 max-[768px]:ml-0 max-[768px]:top-0 max-[768px]:rounded-none  max-[768px]:flex-row max-[586px]:flex-col  max-[768px]:gap-14 "
         >
           <div className="data-container max-[768px]:flex-1">
             <h2 className="text-2xl font-medium text-white">Contact Info</h2>
             <ul className="flex flex-col gap-4 mt-4 text-white">
               <li className="info-link">
                 <span>
-                  <img src={location} alt="icons" width={30} height={30} />
+                  <img src={location} alt="icons" width={20} height={20} />
                 </span>
                 <span className="w-full max-[768px]:w-1/2">
                   Beside Barshal Water Tank, Manpur, Barhanti, West Bengal
@@ -35,15 +35,15 @@ const Contact = () => {
                     src={mail}
                     alt="icons"
                     className=""
-                    width={30}
-                    height={30}
+                    width={20}
+                    height={20}
                   />
                 </span>
                 <span>kkghosh0099@gmail.com</span>
               </li>
               <li className="info-link">
                 <span>
-                  <img src={call} alt="icons" width={30} height={30} />
+                  <img src={call} alt="icons" width={20} height={20} />
                 </span>
                 <span>+91 9007062180</span>
               </li>
@@ -90,8 +90,8 @@ const Contact = () => {
           <div className="empty-container w-[150px] h-full bg-white rounded-xl max-[768px]:hidden "></div>
           <div className="message-container flex-1 flex flex-col p-8 gap-6 ">
             <h2 className="text-2xl text-pinky">Send a Message</h2>
-            <div className="input-container flex  gap-3">
-              <div className="relative w-1/2">
+            <div className="input-container flex gap-3 max-[586px]:flex-col ">
+              <div className="relative w-1/2 max-[568px]:w-full ">
                 <input
                   type="text"
                   id="first-name"
@@ -103,7 +103,7 @@ const Contact = () => {
                   First Name
                 </label>
               </div>
-              <div className="relative w-1/2">
+              <div className="relative w-1/2 max-[568px]:w-full ">
                 <input
                   type="text"
                   id="first-name"
@@ -116,8 +116,8 @@ const Contact = () => {
                 </label>
               </div>
             </div>
-            <div className="input-container">
-              <div className="relative w-full">
+            <div className="input-container max-[586px]:flex-col max-[586px]:relative max-[586px]:bottom-6">
+              <div className="relative w-full max-[586px]:mb-6">
                 <input
                   type="text"
                   id="first-name"
@@ -142,7 +142,7 @@ const Contact = () => {
                 </label>
               </div>
             </div>
-            <div className="textarea-container">
+            <div className="textarea-container  max-[586px]:flex-col  max-[586px]:relative max-[586px]:bottom-4">
               <div className="relative w-full">
                 <textarea
                   id="message"
